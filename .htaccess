@@ -1,0 +1,4 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule --([^/]+) /projects/$1/index.php [NC]
+RewriteRule --([^/]+)--([^/]+) /projects/$1/$2.php [NC]
